@@ -1,0 +1,17 @@
+{
+	// Require!
+	"manifest_version": 2,
+	"name": "TweetDeckToot",
+	"version": "1.0",
+
+	// Recommend.
+	"description": "TweetDeckでCtrl+Enterによる同時Tootを可能にする",
+
+	"content_scripts": [
+		{
+			"matches": ["https://tweetdeck.twitter.com/*"],
+			"js": ["jquery.min.js","script.js"],
+            "run_at": "document_idle"
+		}
+	]
+}
